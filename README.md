@@ -107,9 +107,9 @@ Each component will be designed for reusability and consistency across the appli
 
 ## Overview of the AirBnB Clone for Backend
     🚀 Objective
-The backend for the Airbnb Clone project is designed to provide a robust and scalable foundation for managing user interactions, property listings, bookings, and payments. This backend will support various functionalities required to mimic the core features of Airbnb, ensuring a smooth experience for users and hosts.
+The backend for the Airbnb Clone project is designed to provide a robust and scalable foundation for managing user interactions, property listings, bookings, and payments.
 
-### 🏆 Project Goals
+### 🏆 Project Goals (Feature Breakdown)
 - User Management: Implement a secure system for user registration, authentication, and profile management.
 - Property Management: Develop features for property listing creation, updates, and retrieval.
 - Booking System: Create a booking mechanism for users to reserve properties and manage booking details.
@@ -194,3 +194,27 @@ POST /reviews/ - Create a new review
 GET /reviews/{review_id}/ - Retrieve a specific review
 PUT /reviews/{review_id}/ - Update a specific review
 DELETE /reviews/{review_id}/ - Delete a specific review
+
+### Database Design Overview
+- Key entities required for the project, such as 
+    - Users
+    - Properties 
+    - Bookings
+    - Reviews 
+    - Payments
+
+ - Entity relatonship
+    - a user can have multiple properties 
+    - a booking belongs to a property
+
+### API Security Overview
+- Key security measures that will be implemented 
+    - Authentication: protecting user data
+    - Authorization: protecting user data 
+    - Rate limiting: securing payments
+
+### CI/CD Pipeline Overview
+- Automated pipelines for testing and deploying code changes
+    - Docker
+
+This backend will support various functionalities required to mimic the core features of Airbnb, ensuring a smooth experience for users and hosts.
